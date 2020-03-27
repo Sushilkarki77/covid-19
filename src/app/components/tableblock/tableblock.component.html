@@ -1,0 +1,287 @@
+<div class="mt-3 row">
+  <div class="col-sm-12">
+    <div class="rounded bg-bluelight px-3 py-4">
+      <div class="d-md-flex filter-wrapper">
+        <div class="h5 font-weight-bold mb-3 mr-auto head-color">Hospital Capacity Data</div>
+        <div class="ml-auto">
+         <div class="row">
+           <div class="col-lg-6">
+             <div class="form-search-icon">
+               <input type="text" class="form-control input-design" placeholder="Select"
+                      (click)="showProvince = !showProvince">
+               <div class="form-control input-design" (click)="showProvince = !showProvince">
+                 <div *ngIf="selectedProvince; else provincePlaceholder" class="option">{{selectedProvince}}</div>
+                 <ng-template #provincePlaceholder>{{"Select Province"}}</ng-template>
+               </div>
+             </div>
+             <div class="dropdown" *ngIf="showProvince">
+               <ul class="dropdown-menu">
+                 <li class="select-item" (click)="selectProvince('')">{{"Select Province"}}</li>
+                 <li class="select-item" (click)="selectProvince('province one')">province one</li>
+                 <li class="select-item" (click)="selectProvince('province two')">province two</li>
+                 <li class="select-item" (click)="selectProvince('province three')">province three</li>
+               </ul>
+             </div>
+           </div>
+           <div class="col-lg-6">
+             <div class="form-search-icon">
+               <input type="text" class="form-control input-design" placeholder="Select"
+                      (click)="showDistrict = !showDistrict">
+               <div class="form-control input-design" (click)="showDistrict = !showDistrict">
+                 <div *ngIf="selectedDistrict; else districtPlaceholder" class="option">{{selectedDistrict}}</div>
+                 <ng-template #districtPlaceholder>{{"Select District"}}</ng-template>
+               </div>
+             </div>
+             <div class="dropdown" *ngIf="showDistrict">
+               <ul class="dropdown-menu">
+                 <li class="select-item" (click)="selectDistrict('')">{{"Select District"}}</li>
+                 <li class="select-item" (click)="selectDistrict('district one')">District one</li>
+                 <li class="select-item" (click)="selectDistrict('district two')">District two</li>
+                 <li class="select-item" (click)="selectDistrict('district three')">District three</li>
+               </ul>
+             </div>
+           </div>
+         </div>
+        </div>
+      </div>
+      <div class="small mb-3 mt-1"><i>*Disclaimer: We are sourcing this data from various sources such as government
+        website, situation report, hospital operators, doctors, etc. We need your help to continue gathering this
+        information across all hospitals in Nepal. If you would like to help collect data, please sign up <a
+          class="text-white" href="/join-us">here</a>.</i></div>
+      <div class="table-responsive">
+        <table class="text-white table">
+          <thead>
+          <tr>
+            <th>Name of Hospital</th>
+            <th>Address</th>
+            <th>Contact</th>
+            <th>No. of Beds</th>
+            <th>No. of ICU Beds</th>
+            <th>No. of Ventilators</th>
+            <th>No. of Isolation Beds</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr style="cursor: pointer;">
+            <td>
+              <div>Sukraraj Tropical And Infectious Disease Hospital</div>
+            </td>
+            <td>
+              <div>Teku</div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="7.454" height="10" viewBox="0 0 7.454 10">
+                <path id="Path_652" data-name="Path 652"
+                      d="M235.11,340.85c-.655-.886-1.3-1.739-1.921-2.6a18.066,18.066,0,0,1-1.358-1.957,3.685,3.685,0,0,1,2.733-5.4,3.766,3.766,0,0,1,4.256,3.3,3.7,3.7,0,0,1-.689,2.539C237.154,338.11,236.138,339.455,235.11,340.85Zm0-4.342a1.927,1.927,0,0,0,1.949-1.933,1.947,1.947,0,0,0-3.893-.008A1.932,1.932,0,0,0,235.112,336.509Z"
+                      transform="translate(-231.382 -330.85)" fill="#fff"></path>
+              </svg>
+              <span class="ml-2">Map</span></td>
+            <td><a class="text-white" href="tel:01-4253395">01-4253395 </a></td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+            <td>3</td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+          </tr>
+          <tr style="cursor: pointer;">
+            <td>
+              <div>Bir Hospital</div>
+            </td>
+            <td>
+              <div>Kanti Path</div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="7.454" height="10" viewBox="0 0 7.454 10">
+                <path id="Path_652" data-name="Path 652"
+                      d="M235.11,340.85c-.655-.886-1.3-1.739-1.921-2.6a18.066,18.066,0,0,1-1.358-1.957,3.685,3.685,0,0,1,2.733-5.4,3.766,3.766,0,0,1,4.256,3.3,3.7,3.7,0,0,1-.689,2.539C237.154,338.11,236.138,339.455,235.11,340.85Zm0-4.342a1.927,1.927,0,0,0,1.949-1.933,1.947,1.947,0,0,0-3.893-.008A1.932,1.932,0,0,0,235.112,336.509Z"
+                      transform="translate(-231.382 -330.85)" fill="#fff"></path>
+              </svg>
+              <span class="ml-2">Map</span></td>
+            <td><a class="text-white" href="tel:01-4221119">01-4221119 </a></td>
+            <td>458</td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+          </tr>
+          <tr style="cursor: pointer;">
+            <td>
+              <div>Blue Cross Hospital</div>
+            </td>
+            <td>
+              <div>Tripureshwor</div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="7.454" height="10" viewBox="0 0 7.454 10">
+                <path id="Path_652" data-name="Path 652"
+                      d="M235.11,340.85c-.655-.886-1.3-1.739-1.921-2.6a18.066,18.066,0,0,1-1.358-1.957,3.685,3.685,0,0,1,2.733-5.4,3.766,3.766,0,0,1,4.256,3.3,3.7,3.7,0,0,1-.689,2.539C237.154,338.11,236.138,339.455,235.11,340.85Zm0-4.342a1.927,1.927,0,0,0,1.949-1.933,1.947,1.947,0,0,0-3.893-.008A1.932,1.932,0,0,0,235.112,336.509Z"
+                      transform="translate(-231.382 -330.85)" fill="#fff"></path>
+              </svg>
+              <span class="ml-2">Map</span></td>
+            <td><a class="text-white" href="tel:01-4262027">01-4262027 </a></td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+          </tr>
+          <tr style="cursor: pointer;">
+            <td>
+              <div>CIWEC Hospital</div>
+            </td>
+            <td>
+              <div>British-Indian Embassy Road, Lainchaur</div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="7.454" height="10" viewBox="0 0 7.454 10">
+                <path id="Path_652" data-name="Path 652"
+                      d="M235.11,340.85c-.655-.886-1.3-1.739-1.921-2.6a18.066,18.066,0,0,1-1.358-1.957,3.685,3.685,0,0,1,2.733-5.4,3.766,3.766,0,0,1,4.256,3.3,3.7,3.7,0,0,1-.689,2.539C237.154,338.11,236.138,339.455,235.11,340.85Zm0-4.342a1.927,1.927,0,0,0,1.949-1.933,1.947,1.947,0,0,0-3.893-.008A1.932,1.932,0,0,0,235.112,336.509Z"
+                      transform="translate(-231.382 -330.85)" fill="#fff"></path>
+              </svg>
+              <span class="ml-2">Map</span></td>
+            <td><a class="text-white" href="tel:01-443 5232">01-443 5232 </a></td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+          </tr>
+          <tr style="cursor: pointer;">
+            <td>
+              <div>Grande City Hospital and Clinic</div>
+            </td>
+            <td>
+              <div>Jyoti Bhawan, Jamal, Kantipath, Kathmandu</div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="7.454" height="10" viewBox="0 0 7.454 10">
+                <path id="Path_652" data-name="Path 652"
+                      d="M235.11,340.85c-.655-.886-1.3-1.739-1.921-2.6a18.066,18.066,0,0,1-1.358-1.957,3.685,3.685,0,0,1,2.733-5.4,3.766,3.766,0,0,1,4.256,3.3,3.7,3.7,0,0,1-.689,2.539C237.154,338.11,236.138,339.455,235.11,340.85Zm0-4.342a1.927,1.927,0,0,0,1.949-1.933,1.947,1.947,0,0,0-3.893-.008A1.932,1.932,0,0,0,235.112,336.509Z"
+                      transform="translate(-231.382 -330.85)" fill="#fff"></path>
+              </svg>
+              <span class="ml-2">Map</span></td>
+            <td><a class="text-white" href="tel:01-4163500">01-4163500 </a></td>
+            <td>24</td>
+            <td>5</td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+          </tr>
+          <tr style="cursor: pointer;">
+            <td>
+              <div>Grande International Hospital</div>
+            </td>
+            <td>
+              <div>Dhapasi, Kathmandu, Nepal</div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="7.454" height="10" viewBox="0 0 7.454 10">
+                <path id="Path_652" data-name="Path 652"
+                      d="M235.11,340.85c-.655-.886-1.3-1.739-1.921-2.6a18.066,18.066,0,0,1-1.358-1.957,3.685,3.685,0,0,1,2.733-5.4,3.766,3.766,0,0,1,4.256,3.3,3.7,3.7,0,0,1-.689,2.539C237.154,338.11,236.138,339.455,235.11,340.85Zm0-4.342a1.927,1.927,0,0,0,1.949-1.933,1.947,1.947,0,0,0-3.893-.008A1.932,1.932,0,0,0,235.112,336.509Z"
+                      transform="translate(-231.382 -330.85)" fill="#fff"></path>
+              </svg>
+              <span class="ml-2">Map</span></td>
+            <td><a class="text-white" href="tel:01-5159266">01-5159266 </a></td>
+            <td>200</td>
+            <td>20</td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+          </tr>
+          <tr style="cursor: pointer;">
+            <td>
+              <div>Kanti Childrens Hospital</div>
+            </td>
+            <td>
+              <div>Maharajgunj, Kathmandu</div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="7.454" height="10" viewBox="0 0 7.454 10">
+                <path id="Path_652" data-name="Path 652"
+                      d="M235.11,340.85c-.655-.886-1.3-1.739-1.921-2.6a18.066,18.066,0,0,1-1.358-1.957,3.685,3.685,0,0,1,2.733-5.4,3.766,3.766,0,0,1,4.256,3.3,3.7,3.7,0,0,1-.689,2.539C237.154,338.11,236.138,339.455,235.11,340.85Zm0-4.342a1.927,1.927,0,0,0,1.949-1.933,1.947,1.947,0,0,0-3.893-.008A1.932,1.932,0,0,0,235.112,336.509Z"
+                      transform="translate(-231.382 -330.85)" fill="#fff"></path>
+              </svg>
+              <span class="ml-2">Map</span></td>
+            <td><a class="text-white" href="tel:01-4411140">01-4411140 </a></td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+          </tr>
+          <tr style="cursor: pointer;">
+            <td>
+              <div>Kathmandu Medical College Teaching Hospital</div>
+            </td>
+            <td>
+              <div>Clinical Science Complex, Sinamangal, Kathmandu, Nepal</div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="7.454" height="10" viewBox="0 0 7.454 10">
+                <path id="Path_652" data-name="Path 652"
+                      d="M235.11,340.85c-.655-.886-1.3-1.739-1.921-2.6a18.066,18.066,0,0,1-1.358-1.957,3.685,3.685,0,0,1,2.733-5.4,3.766,3.766,0,0,1,4.256,3.3,3.7,3.7,0,0,1-.689,2.539C237.154,338.11,236.138,339.455,235.11,340.85Zm0-4.342a1.927,1.927,0,0,0,1.949-1.933,1.947,1.947,0,0,0-3.893-.008A1.932,1.932,0,0,0,235.112,336.509Z"
+                      transform="translate(-231.382 -330.85)" fill="#fff"></path>
+              </svg>
+              <span class="ml-2">Map</span></td>
+            <td><a class="text-white" href="tel:01-4476152">01-4476152 </a></td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+          </tr>
+          <tr style="cursor: pointer;">
+            <td>
+              <div>Kathmandu Model Hospital</div>
+            </td>
+            <td>
+              <div>Bagbazar, Kathmandu Nepal</div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="7.454" height="10" viewBox="0 0 7.454 10">
+                <path id="Path_652" data-name="Path 652"
+                      d="M235.11,340.85c-.655-.886-1.3-1.739-1.921-2.6a18.066,18.066,0,0,1-1.358-1.957,3.685,3.685,0,0,1,2.733-5.4,3.766,3.766,0,0,1,4.256,3.3,3.7,3.7,0,0,1-.689,2.539C237.154,338.11,236.138,339.455,235.11,340.85Zm0-4.342a1.927,1.927,0,0,0,1.949-1.933,1.947,1.947,0,0,0-3.893-.008A1.932,1.932,0,0,0,235.112,336.509Z"
+                      transform="translate(-231.382 -330.85)" fill="#fff"></path>
+              </svg>
+              <span class="ml-2">Map</span></td>
+            <td><a class="text-white" href="tel:01-4240806">01-4240806 </a></td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+          </tr>
+          <tr style="cursor: pointer;">
+            <td>
+              <div>Nepal Police Hospital</div>
+            </td>
+            <td>
+              <div>Maharajgunj, Kathmandu , Nepal</div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="7.454" height="10" viewBox="0 0 7.454 10">
+                <path id="Path_652" data-name="Path 652"
+                      d="M235.11,340.85c-.655-.886-1.3-1.739-1.921-2.6a18.066,18.066,0,0,1-1.358-1.957,3.685,3.685,0,0,1,2.733-5.4,3.766,3.766,0,0,1,4.256,3.3,3.7,3.7,0,0,1-.689,2.539C237.154,338.11,236.138,339.455,235.11,340.85Zm0-4.342a1.927,1.927,0,0,0,1.949-1.933,1.947,1.947,0,0,0-3.893-.008A1.932,1.932,0,0,0,235.112,336.509Z"
+                      transform="translate(-231.382 -330.85)" fill="#fff"></path>
+              </svg>
+              <span class="ml-2">Map</span></td>
+            <td><a class="text-white" href="tel:01-4412430">01-4412430 </a></td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+          </tr>
+          <tr style="cursor: pointer;">
+            <td>
+              <div>TU Teaching Hospital</div>
+            </td>
+            <td>
+              <div>Maharagunj, Bagmati, Kathmandu</div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="7.454" height="10" viewBox="0 0 7.454 10">
+                <path id="Path_652" data-name="Path 652"
+                      d="M235.11,340.85c-.655-.886-1.3-1.739-1.921-2.6a18.066,18.066,0,0,1-1.358-1.957,3.685,3.685,0,0,1,2.733-5.4,3.766,3.766,0,0,1,4.256,3.3,3.7,3.7,0,0,1-.689,2.539C237.154,338.11,236.138,339.455,235.11,340.85Zm0-4.342a1.927,1.927,0,0,0,1.949-1.933,1.947,1.947,0,0,0-3.893-.008A1.932,1.932,0,0,0,235.112,336.509Z"
+                      transform="translate(-231.382 -330.85)" fill="#fff"></path>
+              </svg>
+              <span class="ml-2">Map</span></td>
+            <td><a class="text-white" href="tel:01-4412303">01-4412303 </a></td>
+            <td>571</td>
+            <td>11</td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+          </tr>
+          <tr style="cursor: pointer;">
+            <td>
+              <div>Vayodha Hospitals</div>
+            </td>
+            <td>
+              <div>Balkhu Chowk, Kathmandu, Nepal</div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="7.454" height="10" viewBox="0 0 7.454 10">
+                <path id="Path_652" data-name="Path 652"
+                      d="M235.11,340.85c-.655-.886-1.3-1.739-1.921-2.6a18.066,18.066,0,0,1-1.358-1.957,3.685,3.685,0,0,1,2.733-5.4,3.766,3.766,0,0,1,4.256,3.3,3.7,3.7,0,0,1-.689,2.539C237.154,338.11,236.138,339.455,235.11,340.85Zm0-4.342a1.927,1.927,0,0,0,1.949-1.933,1.947,1.947,0,0,0-3.893-.008A1.932,1.932,0,0,0,235.112,336.509Z"
+                      transform="translate(-231.382 -330.85)" fill="#fff"></path>
+              </svg>
+              <span class="ml-2">Map</span></td>
+            <td><a class="text-white" href="tel:01-4286428">01-4286428 </a></td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+            <td><span>NA <small>(sourcing info)</small></span></td>
+          </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

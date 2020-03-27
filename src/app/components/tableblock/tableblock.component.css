@@ -1,0 +1,130 @@
+.filter-wrapper .filter .filter-select {
+  max-width: 112px;
+  display: inline-block;
+  font-size: 12px;
+  width: 112px;
+  vertical-align: middle;
+}
+
+.filter-wrapper .filter .filter-select .css-1pahdxg-control, .filter-wrapper .filter .filter-select .css-yk16xz-control {
+  min-height: 26px;
+}
+
+.filter {
+  color: #B0BAC9;
+  font-size: 12px;
+  letter-spacing: 1.12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.form-search-icon {
+  width: 100%;
+  border: 1px solid #E0E7FF;
+  border-radius: 5px;
+  position: relative;
+}
+
+.input-design {
+  width: 183px;
+  height: 38px;
+  border: none;
+  font-size: 15px;
+  color: #BFC5D2;
+}
+
+
+.input-design.form-control {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 220px;
+  border-color: #BFC5D2;;
+  background: url(/assets/icons/blue_arrow_down.svg) no-repeat;
+  background-position-x: calc(100% - 6px), right;
+  background-position-y: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.input-design.form-control option {
+  padding-top: 10px;
+  padding-bottom: 10px
+}
+
+/* custom dropdown for select input */
+.form-search-icon input {
+  display: none;
+}
+
+.dropdown-menu {
+  width: 100%;
+  margin: 5px 0 0 0;
+  display: block;
+}
+
+.dropdown ul {
+  padding: 0;
+  border: 1px solid #E0E7FF;
+  border-radius: 5px;
+  box-shadow: 0 0 20px 0 rgba(46, 91, 255, 0.07);
+  background: #F9FAFF;
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+/* for scrollbar */
+/* width */
+.dropdown ul::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+
+}
+
+/* Track */
+.dropdown ul::-webkit-scrollbar-track {
+  background: rgba(46, 91, 255, 0.08);
+  border-radius: 1px;
+}
+
+/* Handle */
+.dropdown ul::-webkit-scrollbar-thumb {
+  background: #2E5BFF;
+  border-radius: 1px;
+}
+
+.dropdown ul li {
+  list-style: none;
+  font-size: 15px;
+  color: #2E384D;
+  letter-spacing: 0;
+  font-weight: 400;
+  text-align: left;
+  height: 39px;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.dropdown ul li:hover {
+  background: #2E5BFF;
+  color: #FFFFFF;
+  border-radius: 5px;
+}
+
+.option {
+  font-size: 15px;
+  color: #2E384D;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+.form-group-invalid {
+  border: 1px solid #D63649;
+}
+
+.select-control-invalid {
+  background-size: auto !important;
+  cursor: pointer;
+  background: white !important;
+}
+

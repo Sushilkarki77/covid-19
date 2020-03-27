@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background: #EEF3F5;
+  color: #8798AD;
+  font-size: 14px;
+  padding-top: 80px;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.rounded {
+  border-radius: 15px !important;
+  border: 1px solid rgba(46, 91, 255, 0.08);
+}
+
+.bg-bluelight {
+  background-color: white;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #dee2e6 !important;
+}
+
+.d-inline-block {
+  display: inline-block !important;
+}
+
+.font-weight-bold {
+  font-weight: 700 !important;
+}
+
+
+.text-white {
+  color: #8798AD !important;
+}
+
+.head-color {
+  color: #2E384D;
+}
+
+.ol-attribution {
+  display: none !important;
+}

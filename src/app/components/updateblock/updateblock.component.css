@@ -1,0 +1,123 @@
+.nav.nav-tabs.nav-fill .nav-link.active, .nav.nav-tabs.nav-fill .nav-link:hover {
+  color: #2E384D;
+  background-color: #EEF3F5;
+  border-bottom: 2px solid #2E5BFF;
+}
+
+.nav.nav-tabs.nav-fill .nav-link {
+  font-size: 18px;
+  font-weight: 600;
+  outline: none;
+  border-radius: 0;
+  color: #8798AD;
+  border-color: transparent;
+  text-decoration: none;
+}
+
+.h5 {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.hospital-title, .info-title {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.info-title {
+  font-style: italic;
+}
+
+.align-self-center {
+  -ms-flex-item-align: center !important;
+  align-self: center !important;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+.bg-white {
+  background-color: #EEF3F5 !important;
+}
+
+.text-danger {
+  color: rgb(51, 172, 46);
+}
+
+.align-self-center {
+  -ms-flex-item-align: center !important;
+  align-self: center !important;
+}
+
+.media-body {
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.nav-tabs {
+  border-bottom: none;
+}
+
+.information {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+.information-head {
+  padding: 30px;
+}
+
+.cross {
+  margin-left: auto;
+  cursor: pointer;
+  color: red;
+  float: right;
+}
+
+.wi-100 {
+  width: 100%;
+}
+
+.cross:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.text-blue {
+  color: #2E5BFF;
+}
+
+
+.loader {
+  border: 5px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 5px solid #3498db;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  top: 1%;
+  left: 50%;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
